@@ -1,0 +1,54 @@
+{
+  "overfitting_test": {
+    "no edge (random walk)": {
+      "full_sample_best_sharpe_gross": 0.33417376638921187,
+      "full_sample_best_sharpe": -0.02937320090667846,
+      "walk_forward_in_sample_sharpe": 0.14998798687793255,
+      "walk_forward_out_of_sample_sharpe": -0.2584750677478416,
+      "oos_sharpe_std_across_seeds": 0.28924499635284695,
+      "seeds": 20
+    },
+    "planted momentum": {
+      "full_sample_best_sharpe_gross": 1.3076441464270896,
+      "full_sample_best_sharpe": 1.0144953116678423,
+      "walk_forward_in_sample_sharpe": 1.1672083222363587,
+      "walk_forward_out_of_sample_sharpe": 0.8066672553728195,
+      "oos_sharpe_std_across_seeds": 0.43223913799463215,
+      "seeds": 20
+    }
+  },
+  "cost_sensitivity": [
+    {
+      "round_trip_style_cost_bps": 0,
+      "mean_net_sharpe": 1.13625827608368,
+      "ann_turnover": 32.193000000000005
+    },
+    {
+      "round_trip_style_cost_bps": 5,
+      "mean_net_sharpe": 0.9842445428288495,
+      "ann_turnover": 32.193000000000005
+    },
+    {
+      "round_trip_style_cost_bps": 10,
+      "mean_net_sharpe": 0.8319254031541121,
+      "ann_turnover": 32.193000000000005
+    },
+    {
+      "round_trip_style_cost_bps": 20,
+      "mean_net_sharpe": 0.5272068637791756,
+      "ann_turnover": 32.193000000000005
+    },
+    {
+      "round_trip_style_cost_bps": 40,
+      "mean_net_sharpe": -0.07681931388166105,
+      "ann_turnover": 32.193000000000005
+    }
+  ],
+  "example_run": {
+    "seeds_with_positive_oos_sharpe": 18,
+    "of": 20,
+    "median_oos_sharpe": 0.8935517455893871,
+    "min": -0.08249066546904814,
+    "max": 1.405977459147795
+  }
+}
